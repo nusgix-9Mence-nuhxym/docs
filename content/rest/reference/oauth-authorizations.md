@@ -13,3 +13,7 @@ You can use this API to manage the access OAuth applications have to your accoun
 If you or your users have two-factor authentication enabled, make sure you understand how to [work with two-factor authentication](/rest/overview/other-authentication-methods#working-with-two-factor-authentication).
 
 {% include rest_operations_at_current_path %}
+curl \
+  -X DELETE \
+  -H "Accept: application/vnd.github.v3+json" \
+  http(s)://{hostname}/api/v3/applications/grants/42
